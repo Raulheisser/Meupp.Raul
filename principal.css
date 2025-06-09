@@ -1,0 +1,121 @@
+/* Reseta o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: yellow;
+    color: black;
+}   
+
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+}
+
+.receitas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 30px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 0px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.receita-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50vh;
+    height: auto; /* Ajuste para que a altura dependa do conteúdo */
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 200px;
+    height: 170px;
+}
+
+.receita-item img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.descricao {
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #f2f2f2; /* Fundo mais suave para a descrição */
+    border-radius: 0 0 10px 10px; /* Bordas arredondadas na parte inferior */
+    color: #333;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 10px;
+    border-top: 2px solid rgba(255,255,255,0.2);
+    margin-top: auto;
+    width: 100%;
+    background-color:#4CAF50 ;
+  }
+  
+  .subtitle {
+    font-weight: bold;
+    color: #fff; /* para contraste no fundo verde */
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+
+
